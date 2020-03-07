@@ -1,4 +1,4 @@
-package com.jn.camunda.demo;
+package com.jn.camunda.demo.springboot;
 
 import org.camunda.bpm.engine.RuntimeService;
 import org.camunda.bpm.spring.boot.starter.annotation.EnableProcessApplication;
