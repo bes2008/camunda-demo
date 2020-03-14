@@ -23,7 +23,6 @@
         </dependencies>
     </dependencyManagement>
 
-    <!--
     <dependencies>
         <dependency>
             <groupId>org.camunda.bpm.springboot</groupId>
@@ -40,7 +39,6 @@
             <version>2.1.0</version>
         </dependency>
     </dependencies>
-    -->
     <build>
         <plugins>
             <plugin>

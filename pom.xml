@@ -11,6 +11,7 @@
     <modules>
         <module>camunda-javademo</module>
         <module>camunda-springbootdemo</module>
+        <module>camunda-demo-ui</module>
     </modules>
 
     <properties>
