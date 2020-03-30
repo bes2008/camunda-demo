@@ -23,7 +23,7 @@ public class Cfg_Activiti {
         SpringProcessEngineConfiguration processEngineConfiguration = new SpringProcessEngineConfiguration();
         processEngineConfiguration.setDataSource(dataSource);
         processEngineConfiguration.setDatabaseSchemaUpdate("true");
-        processEngineConfiguration.setDatabaseType("mysql");
+        processEngineConfiguration.setDatabaseType("h2");
 
         processEngineConfiguration.setTransactionManager(transactionManager);
 
