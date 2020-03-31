@@ -1,17 +1,44 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+
+    <div class="bpmnContainer">
+      <div class="bpmn-canvas"></div>
+    </div>
+
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import BpmnModeler from "bpmn-js/lib/Modeler";
+import Objects from "langx-js/dist/Objects";
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
+  data(){
+    return {
+      bpmnModeler: null,
+      canvas: null,
+      initTemplate: 'NULL'
+    };
+  },
+  methods:{
+    init(){
+      this.canvas = this.$ref.canvas;
+      this.bpmnModeler = new BpmnModeler({container: this.canvas});
+      this.initDiagram(this.initTemplate);
+    },
+    initDiagram(bpmn){
+      this.bpmnModeler.importXML(bpmn, err=>{
+        if(Objects.isNotNull(err)){
+
+        }
+      })
+    }
+  },
+
+  mounted() {
+    this.init();
   }
 }
 </script>
