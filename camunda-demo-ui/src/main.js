@@ -1,4 +1,4 @@
-import {Objects} from "langx-js";
+import {Objects,logger} from "langx-js";
 
 import Vue from 'vue'
 import App from './App.vue'
@@ -19,7 +19,7 @@ import 'element-ui/lib/theme-chalk/index.css';
 Vue.use(ElementUI);
 
 Vue.config.productionTip = false
-Objects.hashCode(Vue);
+logger.log(Objects.hashCode(Vue));
 new Vue({
   router,
   render: h => h(App)
