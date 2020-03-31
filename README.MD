@@ -25,6 +25,6 @@ npm run serve
 在浏览器输入: localhost:8080 即可
 
 
-2. Github: https://github.com/bpmn-io
+3. Github: https://github.com/bpmn-io
 
 
