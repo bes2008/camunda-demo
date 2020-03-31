@@ -1,0 +1,15 @@
+server:
+  port: 8080
+
+security:
+  basic:
+    enabled: false
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb
+    username: sa
+    password:
+  thymeleaf:
+    mode: LEGACYHTML5
+    cache: false
