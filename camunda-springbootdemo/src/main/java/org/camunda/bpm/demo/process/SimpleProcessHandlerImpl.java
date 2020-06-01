@@ -1,7 +1,7 @@
 package org.camunda.bpm.demo.process;
 
 
-import com.alibaba.fastjson.JSON;
+import com.jn.easyjson.core.JSONBuilderProvider;
 import org.apache.commons.lang3.StringUtils;
 import org.camunda.bpm.engine.*;
 import org.camunda.bpm.engine.history.HistoricActivityInstance;
@@ -109,7 +109,7 @@ public class SimpleProcessHandlerImpl implements SimpleProcessHandler {
         if (processInstance != null && StringUtils.isNotBlank(processInstance.getId())) {
             processInstanceId = processInstance.getId();
             List<TaskDto> taskList = simpleGetTasks(processInstanceId);
-            logger.info(JSON.toJSONString(taskList));
+            logger.info(JSONBuilderProvider.simplest().toJson(taskList));
             if (taskList != null && taskList.size() == 1) {
                 taskService.complete(taskList.get(0).getId(), variables);
                 taskService.createComment(taskList.get(0).getId(), processInstanceId, "提交流程");
