@@ -31,6 +31,11 @@
                 <artifactId>camunda-engine-rest-jaxrs2</artifactId>
                 <version>${camunda.version}</version>
             </dependency>
+            <dependency>
+                <groupId>com.github.fangjinuo.langx</groupId>
+                <artifactId>langx-java8</artifactId>
+                <version>2.5.0</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
