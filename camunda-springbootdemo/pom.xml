@@ -13,19 +13,15 @@
 
     <properties>
         <camunda.spring-boot.version>3.4.0</camunda.spring-boot.version>
-        <spring-boot.version>2.3.0.RELEASE</spring-boot.version>
-        <spring.cloud.version>Greenwich.RELEASE</spring.cloud.version>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <jersey.version>2.30.1</jersey.version>
         <mysql-connector.version>5.1.47</mysql-connector.version>
         <camunda-swagger.version>7.8.0</camunda-swagger.version>
         <camunda-spin.version>1.6.6</camunda-spin.version>
         <swagger-ui.version>3.20.9</swagger-ui.version>
         <springfox.version>2.9.2</springfox.version>
-        <fastjson.version>1.2.31</fastjson.version>
 
     </properties>
     <dependencyManagement>
@@ -33,7 +29,7 @@
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
-                <version>2.3.0.RELEASE</version>
+                <version>${spring-boot.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
