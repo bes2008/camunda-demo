@@ -15,7 +15,7 @@
         <camunda-swagger.version>7.8.0</camunda-swagger.version>
         <camunda-spin.version>1.6.6</camunda-spin.version>
         <camunda-connect.version>1.4.0</camunda-connect.version>
-        <camunda.spring-boot.version>3.4.0</camunda.spring-boot.version>
+        <camunda.spring-boot.version>${camunda.version}</camunda.spring-boot.version>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -47,6 +47,16 @@
         <dependency>
             <groupId>org.camunda.connect</groupId>
             <artifactId>camunda-connect-core</artifactId>
+            <version>${camunda-connect.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.camunda.connect</groupId>
+            <artifactId>camunda-connect-http-client</artifactId>
+            <version>${camunda-connect.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.camunda.connect</groupId>
+            <artifactId>camunda-connect-soap-http-client</artifactId>
             <version>${camunda-connect.version}</version>
         </dependency>
         <dependency>

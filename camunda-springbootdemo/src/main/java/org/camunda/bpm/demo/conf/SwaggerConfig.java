@@ -23,7 +23,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @ComponentScan(basePackages = {"org.camunda.bpm.demo"})
 public class SwaggerConfig {
     @Bean
-    public Docket swaggerPluggin() {
+    public Docket swaggerPlugin() {
         return new Docket(DocumentationType.SWAGGER_2)
         		.globalOperationParameters(createGlobalParams())
                 .select()
