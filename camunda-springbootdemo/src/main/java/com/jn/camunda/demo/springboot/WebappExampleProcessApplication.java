@@ -16,7 +16,7 @@ public class WebappExampleProcessApplication {
 
     @EventListener
     private void processPostDeploy(PostDeployEvent event) {
-        bpmnRuntime.startProcessInstanceByKey("payment_retrieval_process");
+    //    bpmnRuntime.startProcessInstanceByKey("payment_retrieval_process");
     }
 
     public static void main(String[] args) {
