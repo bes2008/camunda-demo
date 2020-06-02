@@ -1,0 +1,18 @@
+server:
+  port: 8082
+  servlet:
+    context-path: /camunda-jersey-demo
+
+spring:
+  jersey:
+    application-path: /engine-jersey-apis
+    type: filter
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:file:D:/projects/workspace_camundademo/camunda-demo/camunda-jersey-springboot-demo/src/main/resources/camunda_jersey_demo
+    user: !!str "sa"
+    password: !!str "123456"
+logging:
+  level:
+    root: debug
+

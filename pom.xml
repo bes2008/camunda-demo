@@ -12,6 +12,7 @@
         <module>camunda-springbootdemo</module>
         <module>activiti-modeler</module>
         <module>jersey-demo</module>
+        <module>camunda-jersey-springboot-demo</module>
     </modules>
 
     <properties>
